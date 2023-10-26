@@ -1,0 +1,15 @@
+.top-section__title{
+    color: aliceblue;
+}
+
+.steps__left{
+    color: black;
+}
+.content .steps__right{
+    color: black;
+}
+
+.info__item .item__in .social{
+background-color: rgb(39, 28, 162);
+color: black;
+}

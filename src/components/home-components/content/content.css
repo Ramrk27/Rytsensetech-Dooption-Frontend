@@ -1,0 +1,46 @@
+.why-list .why-list__ {
+  margin-left: 15px;
+}
+
+.offers__list .btn {
+  background-color: #0f487c;
+  width: 80px;
+}
+/* .main-slider__bg {
+  background-color: #7c1818;
+
+} */
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.payment-methods-list__itemm{
+  margin-left: 30px;
+}
+
+.footer {
+  text-align: left;
+}
+
+.footer p {
+  text-align: left;
+}
+
+.footer ul {
+  text-align: left;
+}
+
+.footer a {
+  text-align: left;
+}
+
+.risk-disclosure__link-title{
+  text-align: left;
+
+}
+.risk-disclosure__title{
+  text-align: left;
+
+}

@@ -1,0 +1,117 @@
+
+.form-group  .waves {
+    color: #102c52;
+    background-color: #96aec1;
+}
+
+.form-group .waves:hover {
+    background-color: #49a0e6;
+  }
+
+
+
+  .form-control {
+    position: relative;
+    background-color: transparent;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid hsla(0,4%,89%,.2);
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    width: 100%;
+    font-family: NunitoSans,sans-serif;
+    color: hsla(0,0%,100%,.8);
+    z-index: 2;
+    box-shadow: none;
+    font-weight: 300;
+}
+  
+
+input {
+    border-bottom: 1px solid hsla(0,2%,89%,.2);
+    padding: 15px 0;
+    font-family: NunitoSans,sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: hsla(0,0%,88%,.5);
+    background-color: transparent;
+}
+
+
+
+  .sidebar .form-control {
+    border: 0;
+    border-bottom: 1px solid #96aec1;
+    border-radius: 0;
+    padding: 0.45rem 0;
+    color: #96aec1;
+    background-color: transparent;
+}
+
+
+
+
+
+    /* <script type="text/javascript">
+    function refreshCaptcha(button) {
+        button.setAttribute('disabled', 'disabled');
+        button.classList.add('animate-rotate');
+        fetch('https://pocketoption.com/en/refresh-captcha/')
+            .then(response => response.json())
+            .then(data => {
+                if (!data.html) return;
+
+                button.classList.remove('animate-rotate');
+                const elems = document.querySelectorAll('.js-recaptcha-block');
+                elems.forEach(ele => {
+                    ele.innerHTML = data.html;
+                })
+                const inputs = document.querySelectorAll('.js-recaptcha-input');
+                inputs.forEach(ele => {
+                    ele.addEventListener('input', function(){
+                        if (ele.value) {
+                            ele.classList.add('form-control_filled');
+                        } else {
+                            ele.classList.remove('form-control_filled');
+                        }
+                    })
+                })
+            }).catch(() => {});
+    }
+</script> */
+
+
+
+
+
+
+
+
+/* 
+<script type="text/javascript">
+    function refreshCaptcha(button) {
+        button.setAttribute('disabled', 'disabled');
+        button.classList.add('animate-rotate');
+        fetch('https://pocketoption.com/en/refresh-captcha/')
+            .then(response => response.json())
+            .then(data => {
+                if (!data.html) return;
+
+                button.classList.remove('animate-rotate');
+                const elems = document.querySelectorAll('.js-recaptcha-block');
+                elems.forEach(ele => {
+                    ele.innerHTML = data.html;
+                })
+                const inputs = document.querySelectorAll('.js-recaptcha-input');
+                inputs.forEach(ele => {
+                    ele.addEventListener('input', function(){
+                        if (ele.value) {
+                            ele.classList.add('form-control_filled');
+                        } else {
+                            ele.classList.remove('form-control_filled');
+                        }
+                    })
+                })
+            }).catch(() => {});
+    }
+</script> */

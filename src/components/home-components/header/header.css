@@ -1,0 +1,43 @@
+body {
+    overflow-x: hidden;
+    min-width: 320px;
+    font-size: 1.063rem;
+    font-family: NunitoSans,sans-serif;
+    color: #fff;
+    background-color: #bcc3cb;
+}
+
+html {
+    font-size: 15px;
+}
+html {
+    font-size: 16px;
+}
+
+.header_dark {
+    background: linear-gradient(180deg,rgba(7,59,107,.6),rgba(21,81,137,0));
+}
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1001;
+    width: 100%;
+    /* background-color: #fff; */
+    transition: .5s;
+}
+
+
+header {
+    display: block;
+}
+
+.header__logo{
+    text-decoration: none
+
+}
+
+
+
+
+

@@ -1,0 +1,73 @@
+.site-content-in {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    align-items: center;
+    background-color: #b0afafae;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+    height: auto !important;
+    justify-content: center;
+    margin: 43px auto 20px;
+    max-width: 600px;
+    padding-top: 47px;
+    width: 100%;
+  }
+  
+  
+  .social-btn {
+    text-decoration: none;
+    background-color: #96aec1;
+    border-radius: 5px;
+    color: black;
+    transition: background-color 0.3s;
+  }
+  .social-btn:hover{
+      background-color: aqua;
+      color: black;
+  }
+  
+  .brand__link{
+      text-decoration: none ;
+  }
+  
+  /* ///// */
+  
+  .site-header{
+      margin-top: 20px;
+  }
+  .site-header .login-container {
+      -webkit-box-align: center;
+      -webkit-box-pack: justify;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      max-width: 590px;
+      padding: 0 5px;
+      width: 100%;
+      
+  }
+  .site-header__back-btn{
+      margin-left: 10px;
+  }
+  .site-header .login-container {
+      margin-top: 80px;
+      margin: 0 auto;
+      max-width: 600px;
+      padding: 0;
+      width: 100%;
+  }
+  
+  .site-header__back-btn{
+      color: black;
+      text-decoration: none;
+  }
+  .login-content__redirect a:hover{
+    background-color: rgb(114, 189, 189);
+    color: bisque;
+    border-radius: 3px;
+  }
