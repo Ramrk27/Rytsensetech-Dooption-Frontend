@@ -188,7 +188,7 @@ const About = () => {
                 <div class="documents__info-wrap">
                   <div class="documents__left">
                     <h2>Documents </h2>
-                    <p class="documents__desc"></p>
+                    <p class="documents__desc">Infinite Trade LLC is regulated by the Mwali International Services Authority (License T2023322).</p>
                   </div>
                   <div class="documents__right">
                     <ul class="documents__list list">

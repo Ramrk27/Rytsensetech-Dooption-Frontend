@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 // import "./content.css";
 const Content = () => {
+  const navigate = useNavigate()
   return (
     <div>
       <section class="section main-slider">
@@ -889,7 +891,7 @@ const Content = () => {
         </div>
       </section>
 
-      <section class="section section_light applications">
+      {/* <section class="section section_light applications">
         <div class="container">
           <div class="content applications__in">
             <h2>Web application for any device </h2>
@@ -1069,7 +1071,7 @@ const Content = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section class="section section_light reviews-slider">
         <div class="container reviews-slider__container">
@@ -1165,7 +1167,7 @@ const Content = () => {
               <div class="slider__right">
                 <div class="slider__footer slider-footer">
                   <a
-                    href="https://pocketoption.com/en/reviews/"
+                    onClick={()=>{navigate("/riviews")}}
                     class="slider-footer__link-all slider__link-all"
                   >
                     All reviews

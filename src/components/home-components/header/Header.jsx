@@ -300,7 +300,7 @@ const Header = () => {
                 </div>
                 <div class="header__btns">
                   <a
-                    href="https://m.pocketoption.com/en/login/"
+                    onClick={()=>{navigate('/signup')}}
                     class="link link_dark "
                   >
                     <svg

@@ -25,7 +25,7 @@ const Sidebar = () => {
                       method="post"
                       class="form-with-label"
                     >
-                      <div class="form-group">
+                      <div class="form-group form-group_filled">
                         <input
                           type="email"
                           name="email"

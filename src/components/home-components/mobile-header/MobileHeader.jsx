@@ -1,6 +1,7 @@
 import React from "react";
 import "./mobile-header.css";
 import { useNavigate } from "react-router-dom";
+import QuickStart from "../../quick-start/QuickStart";
 const MobileHeader = ({ mobOpen }) => {
   const navigate = useNavigate();
   return (
@@ -261,37 +262,37 @@ const MobileHeader = ({ mobOpen }) => {
             </div>
             <nav class="mobile-nav">
               <div class="mobile-nav__col mobile-nav__col_2">
-                {/* <div class="mb-block">
+                <div class="mb-block">
                   <div class="mb-block__in">
                     <div class="mb-block__title">How it works</div>
                     <ul>
                       <li>
-                        <a
+                        {/* <a
                           class="mb-block__link"
                           href="https://m.pocketoption.com/en/cabinet/demo-high-low/?try-demo=1"
                         >
                           Free Demo
-                        </a>
+                        </a> */}
                       </li>
                       <li>
                         <a
                           class="mb-block__link"
-                          href="https://m.pocketoption.com/en/quick-start/"
+                         onClick={()=>{<QuickStart/>}}
                         >
                           Quick start
                         </a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a
                           class="mb-block__link"
-                          href="https://m.pocketoption.com/en/cabinet/demo-high-low/?try-demo=1&redirectUrl=cabinet/platform-guide"
+                           href="https://m.pocketoption.com/en/cabinet/demo-high-low/?try-demo=1&redirectUrl=cabinet/platform-guide"
                         >
                           Education
                         </a>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
-                </div> */}
+                </div>
                 <div class="mb-block">
                   <div class="mb-block__in">
                     <div class="mb-block__title">Why Dooption</div>
@@ -316,15 +317,15 @@ const MobileHeader = ({ mobOpen }) => {
                           Instant Deposits and Withdrawals
                         </a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a
                           class="mb-block__link"
                           href="https://m.pocketoption.com/en/cabinet/demo-high-low/?try-demo=1&redirectUrl=cabinet/deposit-step-1"
                         >
                           Promo & Bonuses
                         </a>
-                      </li>
-                      <li>
+                      </li> */}
+                      {/* <li>
                         <a
                           class="mb-block__link"
                           target="_blank"
@@ -332,11 +333,11 @@ const MobileHeader = ({ mobOpen }) => {
                         >
                           Social trading
                         </a>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>
-                <div class="mb-block">
+                {/* <div class="mb-block">
                   <div class="mb-block__in">
                     <div class="mb-block__title">Affiliate programs</div>
                     <ul>
@@ -358,7 +359,7 @@ const MobileHeader = ({ mobOpen }) => {
                       </li>
                     </ul>
                   </div>
-                </div>
+                </div> */}
               </div>
               <div class="mobile-nav__col mobile-nav__col_2">
                 <div class="mb-block">
@@ -393,14 +394,14 @@ const MobileHeader = ({ mobOpen }) => {
                           Reviews
                         </a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a
                           class="mb-block__link"
                           href="https://m.pocketoption.com/en/cabinet/support/"
                         >
                           Support Service
                         </a>
-                      </li>
+                      </li> */}
                       <li>
                         <a
                           class="mb-block__link"
@@ -409,7 +410,7 @@ const MobileHeader = ({ mobOpen }) => {
                           Regulation
                         </a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a
                           class="mb-block__link"
                           target="_blank"
@@ -417,27 +418,27 @@ const MobileHeader = ({ mobOpen }) => {
                         >
                           Terms and Conditions
                         </a>
-                      </li>
+                      </li> */}
                       <li>
                         <a
                           class="mb-block__link"
-                          href="https://m.pocketoption.com/en/aml-policy/"
+                          onClick={()=>{navigate("/kyc-policy")}}
                         >
                           AML and KYC Policy
                         </a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a
                           class="mb-block__link"
                           href="https://m.pocketoption.com/pdf/po_trade/po_privacy_en.pdf"
                         >
                           Privacy Policy
                         </a>
-                      </li>
+                      </li> */}
                       <li>
                         <a
                           class="mb-block__link"
-                          href="https://m.pocketoption.com/en/payment-policy/"
+                          onClick={()=>{navigate('/payment-policy')}}
                         >
                           Payment Policy
                         </a>
@@ -445,7 +446,7 @@ const MobileHeader = ({ mobOpen }) => {
                       <li>
                         <a
                           class="mb-block__link"
-                          href="https://m.pocketoption.com/en/responsibility-disclosure/"
+                          onClick={()=>{navigate("/responsibility-policy")}}
                         >
                           Responsibility Disclosure
                         </a>
@@ -471,7 +472,7 @@ const MobileHeader = ({ mobOpen }) => {
                     </a>
                   </div>
                 </div>
-                <div class="mb-block">
+                {/* <div class="mb-block">
                   <div class="mb-block__in mb-block__in_white">
                     <div class="mb-block__title">Platforms</div>
                     <ul>
@@ -504,7 +505,7 @@ const MobileHeader = ({ mobOpen }) => {
                       </li>
                     </ul>
                   </div>
-                </div>
+                </div> */}
               </div>
             </nav>
           </div>

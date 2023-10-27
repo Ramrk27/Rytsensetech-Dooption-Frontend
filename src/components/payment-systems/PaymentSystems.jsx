@@ -2,8 +2,10 @@ import React from "react";
 import Header from "../home-components/header/Header";
 import Footer from "../home-components/footer/Footer";
 import Sidebar from "../home-components/side-bar/Sidebar";
+import { useNavigate } from "react-router-dom";
 
 const PaymentSystems = () => {
+  const navigate = useNavigate()
   return (
     <div>
 
@@ -20,7 +22,7 @@ const PaymentSystems = () => {
                   <li class="breadcrumbs__item">
                     <a
                       class="breadcrumbs__link"
-                      href="https://pocketoption.com/en/"
+                     onClick={()=>{navigate("/")}}
                     >
                       Home
                     </a>

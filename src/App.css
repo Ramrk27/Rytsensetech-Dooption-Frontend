@@ -10676,7 +10676,7 @@ a:focus,a:hover {
 }
 
 .form-group_filled label {
-  color: #fff;
+  color: #ffffff;
   transform: translateY(-1rem) scale(.75)
 }
 
@@ -21767,7 +21767,7 @@ input {
   top: 0;
   z-index: 1001;
   width: 100%;
-  background-color: #fff;
+  background: linear-gradient(180deg,#212529,#052c65, 50%,#198754);
   transition: .5s
 }
 
@@ -22463,6 +22463,7 @@ input {
   }
 }
 
+/* mine */
 .sidebar {
   position: fixed;
   right: 0;
@@ -22474,7 +22475,7 @@ input {
   width: 18.75rem;
   box-shadow: 0 2rem 2rem rgba(7,59,107,.2);
   color: #96aec1;
-  background: #102c52
+  background: linear-gradient(180deg,#495057,#343a40, 50%,#000)
 }
 
 .sidebar__container {
@@ -22490,7 +22491,7 @@ input {
   display: flex;
   background: #2f3d56
 }
-
+/* mine */
 .sidebar .tabs__btn {
   flex: 1 1 50%;
   border-top: 2px solid #173257;
@@ -22500,15 +22501,16 @@ input {
   text-align: center;
   text-decoration: none;
   color: #96aec1;
-  background: #061b38;
+  background: linear-gradient(180deg,#000,#000, 50%,#495057);
   transition: all .5s;
   cursor: pointer
 }
-
+/* Mine */
 .sidebar .tabs__btn.active,.sidebar .tabs__btn:hover {
   border-top: 2px solid #0099fa;
   color: #0099fa;
-  background: #102c52
+  background: linear-gradient(180deg,#000,#000, 50%,#343a40)
+
 }
 
 .sidebar .tabs__info {
@@ -22640,6 +22642,9 @@ input {
   pointer-events: none;
   z-index: 2
 }
+ /* .form-group_filled {
+  background-color: transparent;
+} */
 
 .sidebar input:-webkit-autofill,.sidebar input:-webkit-autofill:focus,.sidebar input:-webkit-autofill:hover,.sidebar select:-webkit-autofill,.sidebar select:-webkit-autofill:focus,.sidebar select:-webkit-autofill:hover,.sidebar textarea:-webkit-autofill,.sidebar textarea:-webkit-autofill:focus,.sidebar textarea:-webkit-autofill:hover {
   -webkit-text-fill-color: #96aec1;
@@ -22653,7 +22658,7 @@ input {
   border-radius: 0;
   padding: .45rem 0;
   color: #96aec1;
-  background-color: transparent
+  background-color: transparent;
 }
 
 .sidebar .form-control::placeholder {
@@ -24653,13 +24658,13 @@ input {
       flex:0 0 100%
   }
 }
-
+/* mine */
 .main-slider {
   overflow: hidden;
   position: relative;
   padding-top: 0!important;
   color: #fff;
-  background: linear-gradient(180deg,#003b72,#00264a 50%,#00264a)
+  background: linear-gradient(180deg,#101316,#575d62 50%,#000000);
 }
 
 .main-slider:after {
@@ -25695,4 +25700,10 @@ input {
 .customers-fbo-modal .btn-wrap {
   margin-top: 20px;
   text-align: center
+}
+
+
+/* mine */
+.page .text-section{
+background-color: #02274b;
 }

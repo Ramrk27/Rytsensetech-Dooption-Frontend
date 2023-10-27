@@ -10,6 +10,9 @@ import PaymentSystems from './components/payment-systems/PaymentSystems';
 import Contacts from './components/contacts/Contacts';
 import Riview from './components/riviews/Riview';
 import RegulationsLicenses from './components/regulations-licenses/RegulationsLicenses';
+import KycPolicy from './components/kyc-policy/KycPolicy';
+import PaymentPolicy from './components/payment-policy/PaymentPolicy';
+import ResponsibilityDisclosure from './components/responsibility-disclosure/ResponsibilityDisclosure';
 
 function App() {
   return (
@@ -25,8 +28,10 @@ function App() {
         <Route path='/payment-systems' element={<PaymentSystems/>}/>
         <Route path='/contacts' element={<Contacts/>}/>
         <Route path='/riviews' element={<Riview/>}/>
-        <Route path='/riviews' element={<Riview/>}/>
         <Route path='/regulatory-environment' element={<RegulationsLicenses/>}/>
+        <Route path='/kyc-policy' element={<KycPolicy/>}/>
+        <Route path='/payment-policy' element={<PaymentPolicy/>}/>
+        <Route path='/responsibility-policy' element={<ResponsibilityDisclosure/>}/>
       </Routes>
       </BrowserRouter>
     </div>
