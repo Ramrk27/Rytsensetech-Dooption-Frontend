@@ -1,78 +1,69 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import "./content.css";
+import "./content.css";
+import Carousel from "react-bootstrap/Carousel";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import Sliding from "../sliding-comp/Sliding";
 const Content = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+  const items = [
+    {
+      src: "/images/cards/edit-three.png",
+      alt: "First slide",
+      title: "ACHIEVEMENTS",
+    },
+    {
+      src: "/images/cards/edit-two.png",
+      alt: "Second slide",
+      title: "PAYMENT METHODS",
+    },
+    {
+      src: "/images/cards/six-edit.png",
+      alt: "Third slide",
+      title: "GREAT COMMUNITY",
+    },
+    {
+      src: "/images/cards/four-edit.png",
+      alt: "First slide",
+      title: "WHY PEOPLE CHOOSE US",
+    },
+    {
+      src: "/images/cards/five-edit.png",
+      alt: "Second slide",
+      title: "TECHNICAL ANALYSIS TOOL",
+    },
+    {
+      src: "/images/cards/edit-one.png",
+      alt: "Third slide",
+      title: "TRADING ASSETS",
+    },
+  ];
+  const totalItems = items.length;
   return (
     <div>
       <section class="section main-slider">
         <div class="container main-slider__container">
-          <div class="main-slider__bg bg">
-            <picture class="bg__item bg__item_candles">
-              <source
-                srcset="https://pocketoption.com/themes/2017-09/img/header-bg-1.webp"
-                type="image/webp"
-              />
-              <img
-                src="https://pocketoption.com/themes/2017-09/img/header-bg-1.png"
-                alt=""
-              />
-            </picture>
-            <picture class="bg__item bg__item_phone">
-              <source
-                srcset="https://pocketoption.com/themes/2017-09/img/header-bg-2.webp"
-                type="image/webp"
-              />
-              <img
-                src="https://pocketoption.com/themes/2017-09/img/header-bg-2.png"
-                alt=""
-              />
-            </picture>
-            <picture class="bg__item bg__item_note">
-              <source
-                srcset="https://pocketoption.com/themes/2017-09/img/header-bg-3_1.webp"
-                media="(max-width: 550px)"
-                type="image/webp"
-              />
-              <source
-                srcset="https://pocketoption.com/themes/2017-09/img/header-bg-3_1.png"
-                media="(max-width: 550px)"
-                type="image/jpeg"
-              />
-
-              <source
-                srcset="https://pocketoption.com/themes/2017-09/img/header-bg-3_2.webp"
-                media="(max-width: 1024px)"
-                type="image/webp"
-              />
-              <source
-                srcset="https://pocketoption.com/themes/2017-09/img/header-bg-3_2.png"
-                media="(max-width: 1024px)"
-                type="image/jpeg"
-              />
-
-              <img
-                src="https://pocketoption.com/themes/2017-09/img/header-bg-3.webp"
-                alt=""
-              />
-              <img
-                src="https://pocketoption.com/themes/2017-09/img/header-bg-3.png"
-                alt=""
-              />
-            </picture>
-            <div class="bg__item bg__item_gradient"></div>
-          </div>
           <div class="content main-slider__content">
             <div class="main-slider__in">
               <h1 class="main-slider__title">
-                The right place
-                <br /> for online trading on financial markets
+                Because you <br /> are the best
+                <br /> you deserve the best
               </h1>
               <div class="main-slider__desc">
                 <p class="main-slider__desc_bold">
-                  The most convenient interface
+                  Join the largest gathering and online trading platform
                 </p>
-                <p>Get access to trade over 100 global trading assets</p>
+                <p>
+                  With access to trading in more than 100 global trading assets
+                  in just one platform.
+                </p>
               </div>
               <div class="main-slider__btn-container">
                 <a
@@ -88,71 +79,81 @@ const Content = () => {
       </section>
 
       <section class="section section_light conditions" id="conditions">
-        <div class="container">
-          <div class="content">
-            <div class="conditions__in">
-              <h2>Place your trades on best conditions</h2>
-              <ul class="conditions__list">
-                <li class="conditions__item">
-                  <p class="conditions__num">
-                    $
-                    <i data-from="0" data-to="5">
-                      0
-                    </i>
-                    <span class="conditions__star">*</span>
-                  </p>
-                  <span class="conditions__subtitle">
-                    Minimum investment amount
-                  </span>
-                </li>
-                <li class="conditions__item">
-                  <p class="conditions__num">
-                    $
-                    <i data-from="0" data-to="1">
-                      0
-                    </i>
-                  </p>
-                  <span class="conditions__subtitle">Minimum trade amount</span>
-                </li>
-                <li class="conditions__item">
-                  <p class="conditions__num">
-                    $
-                    <i data-from="0" data-to="50000">
-                      0
-                    </i>
-                  </p>
-                  <span class="conditions__subtitle">
-                    Virtual money on your Demo account
-                  </span>
-                </li>
-                <li class="conditions__item">
-                  <p class="conditions__num">
-                    <i data-from="0" data-to="50">
-                      0
-                    </i>
-                    +
-                  </p>
-                  <span class="conditions__subtitle">Payment methods</span>
-                </li>
-                <li class="conditions__item conditions__item_nomargin">
-                  <p class="conditions__num">$0</p>
-                  <span class="conditions__subtitle">
-                    No commission on deposit and withdrawal
-                  </span>
-                </li>
-                <li class="conditions__item conditions__item_nomargin">
-                  <p class="conditions__num">
-                    <i data-from="0" data-to="100">
-                      0
-                    </i>
-                    +
-                  </p>
-                  <span class="conditions__subtitle">Assets for trading</span>
-                </li>
-              </ul>
+        <div class="section_light_second_bg">
+          <div class="container">
+            <div class="content">
+              <div class="conditions__in">
+                <h2>Place your trades on best conditions</h2>
+                <ul class="conditions__list">
+                  <li class="conditions__item">
+                    <p class="conditions__num">
+                      $
+                      <i data-from="0" data-to="5">
+                        0
+                      </i>
+                      <span class="conditions__star">*</span>
+                    </p>
+                    <span class="conditions__subtitle">
+                      Minimum investment amount
+                    </span>
+                  </li>
+                  <li class="conditions__item">
+                    <p class="conditions__num">
+                      $
+                      <i data-from="0" data-to="1">
+                        0
+                      </i>
+                    </p>
+                    <span class="conditions__subtitle">
+                      Minimum trade amount
+                    </span>
+                  </li>
+                  <li class="conditions__item">
+                    <p class="conditions__num">
+                      $
+                      <i data-from="0" data-to="50000">
+                        0
+                      </i>
+                    </p>
+                    <span class="conditions__subtitle">
+                      Virtual money on your Demo account
+                    </span>
+                  </li>
+                  <li class="conditions__item">
+                    <p class="conditions__num">
+                      <i data-from="0" data-to="50">
+                        0
+                      </i>
+                      +
+                    </p>
+                    <span class="conditions__subtitle">Payment methods</span>
+                  </li>
+                  <li class="conditions__item conditions__item_nomargin">
+                    <p class="conditions__num">$0</p>
+                    <span class="conditions__subtitle">
+                      No commission on deposit and withdrawal
+                    </span>
+                  </li>
+                  <li class="conditions__item conditions__item_nomargin">
+                    <p class="conditions__num">
+                      <i data-from="0" data-to="100">
+                        0
+                      </i>
+                      +
+                    </p>
+                    <span class="conditions__subtitle">Assets for trading</span>
+                  </li>
+                </ul>
 
-              <div class="monitor">
-                <img src="/images/monitor.png" alt="Monitor" />
+                <div class="monitor rotate">
+                  <picture>
+                    <img
+                      src="/images/bg/joshh.png"
+                      alt="Monitor"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
               </div>
             </div>
           </div>
@@ -330,7 +331,7 @@ const Content = () => {
       <section class="section slider offers">
         <div class="container">
           <div class="content offers__in">
-            <div class="slider__arrows">
+            {/* <div class="slider__arrows">
               <a class="slider__arrow arrow arrow-left">
                 <svg
                   width="13"
@@ -363,8 +364,9 @@ const Content = () => {
                   />
                 </svg>
               </a>
-            </div>
-            <div class="offers__corners">
+            </div> */}
+
+            {/* <div class="offers__corners">
               <img
                 src="https://pocketoption.com/themes/2017-09/img/offers-slider/corner-1.png"
                 class="offers__corner offers__corner_1"
@@ -389,8 +391,8 @@ const Content = () => {
                 alt=""
                 loading="lazy"
               />
-            </div>
-            <div class="offers__list">
+            </div> */}
+            {/* <div class="offers__list">
               <a
                 href="https://pocketoption.com/en/payment-methods/"
                 class="offers__item offers__item_payment-methods"
@@ -398,35 +400,15 @@ const Content = () => {
                 <div class="offers__col">
                   <div class="offers__img-wrap">
                     <picture class="offers__img offers__img_no-shine">
-                      <source
-                        srcset="https://pocketoption.com/themes/2017-09/img/offers-slider/card.webp 1x, https://pocketoption.com/themes/2017-09/img/offers-slider/card@2x.webp 2x"
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="https://pocketoption.com/themes/2017-09/img/offers-slider/card.png 1x, https://pocketoption.com/themes/2017-09/img/offers-slider/card@2x.png 2x"
-                        type="image/png"
-                      />
                       <img
-                        src="https://pocketoption.com/themes/2017-09/img/offers-slider/card.png"
-                        data-src="https://pocketoption.com/themes/2017-09/img/offers-slider/card.png"
-                        srcset="https://pocketoption.com/themes/2017-09/img/offers-slider/card.png 1x, https://pocketoption.com/themes/2017-09/img/offers-slider/card@2x.png 2x"
+                        src="/images/cards/one.webp"
                         alt="Card icon"
                         loading="lazy"
                       />
                     </picture>
                     <picture class="offers__img offers__img_shine">
-                      <source
-                        srcset="https://pocketoption.com/themes/2017-09/img/offers-slider/card_s.webp 1x, https://pocketoption.com/themes/2017-09/img/offers-slider/card_s@2x.webp 2x"
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="https://pocketoption.com/themes/2017-09/img/offers-slider/card_s.png 1x, https://pocketoption.com/themes/2017-09/img/offers-slider/card_s@2x.png 2x"
-                        type="image/png"
-                      />
                       <img
-                        src="https://pocketoption.com/themes/2017-09/img/offers-slider/card_s.png"
-                        data-src="https://pocketoption.com/themes/2017-09/img/offers-slider/card_s.png"
-                        srcset="https://pocketoption.com/themes/2017-09/img/offers-slider/card_s.png 1x, https://pocketoption.com/themes/2017-09/img/offers-slider/card_s@2x.png 2x"
+                        src="/images/cards/one.webp"
                         alt="Card icon"
                         loading="lazy"
                       />
@@ -443,36 +425,16 @@ const Content = () => {
                 <div class="offers__col">
                   <div class="offers__img-wrap">
                     <picture class="offers__img offers__img_no-shine">
-                      <source
-                        srcset="https://pocketoption.com/themes/2017-09/img/offers-slider/trade.webp 1x, https://pocketoption.com/themes/2017-09/img/offers-slider/trade@2x.webp 2x"
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="https://pocketoption.com/themes/2017-09/img/offers-slider/trade.png 1x, https://pocketoption.com/themes/2017-09/img/offers-slider/trade@2x.png 2x"
-                        type="image/png"
-                      />
                       <img
-                        src="https://pocketoption.com/themes/2017-09/img/offers-slider/trade.png"
-                        data-src="https://pocketoption.com/themes/2017-09/img/offers-slider/trade.png"
-                        srcset="https://pocketoption.com/themes/2017-09/img/offers-slider/trade.png 1x, https://pocketoption.com/themes/2017-09/img/offers-slider/trade@2x.png 2x"
-                        alt="Trading icon"
+                        src="/images/cards/two.webp"
+                        alt="Card icon"
                         loading="lazy"
                       />
                     </picture>
                     <picture class="offers__img offers__img_shine">
-                      <source
-                        srcset="https://pocketoption.com/themes/2017-09/img/offers-slider/trade_s.webp 1x, https://pocketoption.com/themes/2017-09/img/offers-slider/trade_s@2x.webp 2x"
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="https://pocketoption.com/themes/2017-09/img/offers-slider/trade_s.png 1x, https://pocketoption.com/themes/2017-09/img/offers-slider/trade_s@2x.png 2x"
-                        type="image/png"
-                      />
                       <img
-                        src="https://pocketoption.com/themes/2017-09/img/offers-slider/trade_s.png"
-                        data-src="https://pocketoption.com/themes/2017-09/img/offers-slider/trade_s.png"
-                        srcset="https://pocketoption.com/themes/2017-09/img/offers-slider/trade_s.png 1x, https://pocketoption.com/themes/2017-09/img/offers-slider/trade_s@2x.png 2x"
-                        alt="Trading icon"
+                        src="/images/cards/two.webp"
+                        alt="Card icon"
                         loading="lazy"
                       />
                     </picture>
@@ -489,36 +451,16 @@ const Content = () => {
                 <div class="offers__col">
                   <div class="offers__img-wrap">
                     <picture class="offers__img offers__img_no-shine">
-                      <source
-                        srcset="https://pocketoption.com/themes/2017-09/img/offers-slider/archi.webp 1x, https://pocketoption.com/themes/2017-09/img/offers-slider/archi@2x.webp 2x"
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="https://pocketoption.com/themes/2017-09/img/offers-slider/archi.png 1x, https://pocketoption.com/themes/2017-09/img/offers-slider/archi@2x.png 2x"
-                        type="image/png"
-                      />
                       <img
-                        src="https://pocketoption.com/themes/2017-09/img/offers-slider/archi.png"
-                        data-src="https://pocketoption.com/themes/2017-09/img/offers-slider/archi.png"
-                        srcset="https://pocketoption.com/themes/2017-09/img/offers-slider/archi.png 1x, https://pocketoption.com/themes/2017-09/img/offers-slider/archi@2x.png 2x"
-                        alt="Cup icon"
+                        src="/images/cards/three.webp"
+                        alt="Card icon"
                         loading="lazy"
                       />
                     </picture>
                     <picture class="offers__img offers__img_shine">
-                      <source
-                        srcset="https://pocketoption.com/themes/2017-09/img/offers-slider/archi_s.webp 1x, https://pocketoption.com/themes/2017-09/img/offers-slider/archi_s@2x.webp 2x"
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="https://pocketoption.com/themes/2017-09/img/offers-slider/archi_s.png 1x, https://pocketoption.com/themes/2017-09/img/offers-slider/archi_s@2x.png 2x"
-                        type="image/png"
-                      />
                       <img
-                        src="https://pocketoption.com/themes/2017-09/img/offers-slider/archi_s.png"
-                        data-src="https://pocketoption.com/themes/2017-09/img/offers-slider/archi_s.png"
-                        srcset="https://pocketoption.com/themes/2017-09/img/offers-slider/archi_s.png 1x, https://pocketoption.com/themes/2017-09/img/offers-slider/archi_s@2x.png 2x"
-                        alt="Cup icon"
+                        src="/images/cards/three.webp"
+                        alt="Card icon"
                         loading="lazy"
                       />
                     </picture>
@@ -535,36 +477,16 @@ const Content = () => {
                 <div class="offers__col">
                   <div class="offers__img-wrap">
                     <picture class="offers__img offers__img_no-shine">
-                      <source
-                        srcset="https://pocketoption.com/themes/2017-09/img/offers-slider/app.webp 1x, https://pocketoption.com/themes/2017-09/img/offers-slider/app@2x.webp 2x"
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="https://pocketoption.com/themes/2017-09/img/offers-slider/app.png 1x, https://pocketoption.com/themes/2017-09/img/offers-slider/app@2x.png 2x"
-                        type="image/png"
-                      />
                       <img
-                        src="https://pocketoption.com/themes/2017-09/img/offers-slider/app.png"
-                        data-src="https://pocketoption.com/themes/2017-09/img/offers-slider/app.png"
-                        srcset="https://pocketoption.com/themes/2017-09/img/offers-slider/app.png 1x, https://pocketoption.com/themes/2017-09/img/offers-slider/app@2x.png 2x"
-                        alt="App icon"
+                        src="/images/cards/four.webp"
+                        alt="Card icon"
                         loading="lazy"
                       />
                     </picture>
                     <picture class="offers__img offers__img_shine">
-                      <source
-                        srcset="https://pocketoption.com/themes/2017-09/img/offers-slider/app_s.webp 1x, https://pocketoption.com/themes/2017-09/img/offers-slider/app_s@2x.webp 2x"
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="https://pocketoption.com/themes/2017-09/img/offers-slider/app_s.png 1x, https://pocketoption.com/themes/2017-09/img/offers-slider/app_s@2x.png 2x"
-                        type="image/png"
-                      />
                       <img
-                        src="https://pocketoption.com/themes/2017-09/img/offers-slider/app_s.png"
-                        data-src="https://pocketoption.com/themes/2017-09/img/offers-slider/app_s.png"
-                        srcset="https://pocketoption.com/themes/2017-09/img/offers-slider/app_s.png 1x, https://pocketoption.com/themes/2017-09/img/offers-slider/app_s@2x.png 2x"
-                        alt="App icon"
+                        src="/images/cards/four.webp"
+                        alt="Card icon"
                         loading="lazy"
                       />
                     </picture>
@@ -848,20 +770,63 @@ const Content = () => {
                   <div class="btn btn_dark-blue offers__btn">More</div>
                 </div>
               </a>
-            </div>
+            </div> */}
+
+            <Sliding items={items} itemsPerPage={3} />
+            {/* <Carousel data-bs-theme="dark">
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="/images/cards/edit-three.png"
+                  alt="First slide"
+                />
+                <Carousel.Caption>
+                  <h5>Payment Method</h5>
+                  <p>
+                    Nulla vitae elit libero, a pharetra augue mollis interdum.
+                  </p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="/images/cards/edit-two.png"
+                  alt="Second slide"
+                />
+                <Carousel.Caption>
+                  <h5>Second slide label</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="/images/bg/sec-one.jpg"
+                  alt="Third slide"
+                />
+                <Carousel.Caption>
+                  <h5>Third slide label</h5>
+                  <p>
+                    Praesent commodo cursus magna, vel scelerisque nisl
+                    consectetur.
+                  </p>
+                </Carousel.Caption>
+              </Carousel.Item>
+            </Carousel> */}
           </div>
         </div>
       </section>
 
-      <section class="section section_light check-your-luck">
+      {/* <section class="section section_light check-your-luck">
         <div class="container container__no-padding">
           <div class="content check-your-luck__in">
             <div class="check-your-luck__left">
               <h2>Test Your Luck!</h2>
               <p class="title-desc">
-                Enter your email address and get a special offer from Dooption
-                . If the luck is on your side, you will receive a free
-                gift!{" "}
+                Enter your email address and get a special offer from Dooption .
+                If the luck is on your side, you will receive a free gift!{" "}
               </p>
             </div>
             <div class="check-your-luck__right">
@@ -889,7 +854,7 @@ const Content = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <section class="section section_light applications">
         <div class="container">
@@ -1167,7 +1132,9 @@ const Content = () => {
               <div class="slider__right">
                 <div class="slider__footer slider-footer">
                   <a
-                    onClick={()=>{navigate("/riviews")}}
+                    onClick={() => {
+                      navigate("/riviews");
+                    }}
                     class="slider-footer__link-all slider__link-all"
                   >
                     All reviews
@@ -1179,7 +1146,9 @@ const Content = () => {
                     your feedback!{" "}
                   </p>
                   <a
-                    href="https://pocketoption.com/en/reviews/"
+                    onClick={() => {
+                      navigate("/riviews");
+                    }}
                     class="btn btn_light-blue slider-footer__btn"
                   >
                     Submit a review{" "}

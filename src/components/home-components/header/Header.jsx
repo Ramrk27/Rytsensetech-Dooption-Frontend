@@ -40,7 +40,7 @@ const Header = () => {
               <div class="header__menu">
                 <ul>
                   <li>
-                    <a href="/">Free Demo</a>
+                    <a onClick={()=>{navigate("/demo-page")}}>Free Demo</a>
                   </li>
                   <li>
                     <a onClick={()=>{navigate('/quick-start')}}>Quick start</a>

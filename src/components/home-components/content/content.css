@@ -2,3 +2,70 @@
 .content {
   color: aliceblue;
 }
+.main-slider__bg .bg img{
+margin-left: 500px;
+}
+
+.section_light {
+  /* background: linear-gradient(180deg,#104949,#0b8484, 50%,#0b8484); */
+  /* background-color: #1f7d3d */
+  /* var(--cl-anchor-color, #0b8484) */
+}
+
+.main-slider {
+  background-image: url('/public/images/bg/background.jpg');
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+}
+
+/* #f8fafc */
+.main-slider__btn-container .btn{
+color: aliceblue;
+}
+.start-trading__inn .btn{
+color: aliceblue;
+}
+.start-trading__text{
+  color: rgb(6, 8, 9);
+}
+
+.why-list{
+  background: linear-gradient(180deg,#03366a,#488dc5 50%,#fff);
+
+}
+.why-list {
+  padding-bottom: 22px;
+  padding-top: 22px;
+}
+
+.form-wrap .btn_blue-gradient{
+  color: aliceblue;
+}
+.slider-footer__text{
+  color: black;
+}
+.reviews-slider__title-desc{
+  color: black;
+}
+.why-list__{
+  margin-left: 10px;
+}
+
+.offers__img-wrap img {
+  margin-top: 50px;
+  max-width: 100px; /* Adjust the maximum width as needed */
+  max-height: 100px; /* Adjust the maximum height as needed */
+}
+.section_light_second_bg{
+  background: linear-gradient(180deg,#8bd6b3,#f9f9f9 50%,#8bd6b3);
+}
+.card-title {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 10px;
+    color: aqua;
+  }
+}

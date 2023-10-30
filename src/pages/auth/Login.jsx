@@ -1,5 +1,5 @@
 import React from "react";
-// import "./login.css";
+import "./login.css";
 import Header from "../../components/auth-components/login/Header";
 import LoginContent from "../../components/auth-components/login/LoginContent";
 const Login = () => {

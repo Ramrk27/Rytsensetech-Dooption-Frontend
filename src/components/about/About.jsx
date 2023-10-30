@@ -12,49 +12,43 @@ const About = () => {
 
       <div class="page page--about-us">
         <section class="section top-section">
-          <div class="container top-section__container">
-            <div class="top-section__bg bg">
-              <img
-                src="https://pocketoption.com/themes/2017-09/img/pages/about/about-bg.png"
-                alt=""
-                class="bg__item bg__item_1"
-              />
-              <div class="bg__item bg__item_gradient"></div>
-            </div>
-            <div class="content top-section__content">
-              <div class="breadcrumbs-wrap">
-                <ul class="breadcrumbs ">
-                  <li class="breadcrumbs__item">
-                    <a
-                      class="breadcrumbs__link"
-                      onClick={() => {
-                        navigate("/");
-                      }}
-                    >
-                      Home
-                    </a>
-                  </li>
-                  <li class="breadcrumbs__item breadcrumbs__item--active">
-                    <span class="breadcrumbs__label">About Us</span>
-                  </li>
-                </ul>{" "}
-              </div>
+          <div class="container top-section__container_about_bg">
+            <div class="container top-section__container">
+              <div class="content top-section__content">
+                <div class="breadcrumbs-wrap">
+                  <ul class="breadcrumbs ">
+                    <li class="breadcrumbs__item">
+                      <a
+                        class="breadcrumbs__link"
+                        onClick={() => {
+                          navigate("/");
+                        }}
+                      >
+                        Home
+                      </a>
+                    </li>
+                    <li class="breadcrumbs__item breadcrumbs__item--active">
+                      <span class="breadcrumbs__label">About Us</span>
+                    </li>
+                  </ul>{" "}
+                </div>
 
-              <h1 class="top-section__title">
-                <span>Our mission</span> is to provide the most innovative
-                trading experience{" "}
-              </h1>
-              <p class="top-section__desc">
-                Dooption was founded in 2017 by a team of talented IT and
-                FinTech specialists who wanted to prove that people don’t need
-                to compromise to earn on financial markets — that trading should
-                be accessible, convenient and more fun.
-              </p>
-              <p class="top-section__desc">
-                Today, we continue to develop, improve and constantly innovate
-                trading experience. We do believe that trading should be
-                available to anyone in the world.{" "}
-              </p>
+                <h1 class="top-section__title">
+                  <span>Our mission</span> is to provide the most innovative
+                  trading experience{" "}
+                </h1>
+                <p class="top-section__desc">
+                  Dooption was founded in 2017 by a team of talented IT and
+                  FinTech specialists who wanted to prove that people don’t need
+                  to compromise to earn on financial markets — that trading
+                  should be accessible, convenient and more fun.
+                </p>
+                <p class="top-section__desc">
+                  Today, we continue to develop, improve and constantly innovate
+                  trading experience. We do believe that trading should be
+                  available to anyone in the world.{" "}
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -188,7 +182,10 @@ const About = () => {
                 <div class="documents__info-wrap">
                   <div class="documents__left">
                     <h2>Documents </h2>
-                    <p class="documents__desc">Infinite Trade LLC is regulated by the Mwali International Services Authority (License T2023322).</p>
+                    <p class="documents__desc">
+                      Infinite Trade LLC is regulated by the Mwali International
+                      Services Authority (License T2023322).
+                    </p>
                   </div>
                   <div class="documents__right">
                     <ul class="documents__list list">
@@ -228,7 +225,9 @@ const About = () => {
                       <li class="list__item">
                         <a
                           class="list__link"
-                          href="https://pocketoption.com/en/payment-policy/"
+                          onClick={() => {
+                            navigate("/payment-policy");
+                          }}
                         >
                           Payment Policy
                         </a>

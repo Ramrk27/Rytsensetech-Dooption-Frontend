@@ -13,6 +13,7 @@ import RegulationsLicenses from './components/regulations-licenses/RegulationsLi
 import KycPolicy from './components/kyc-policy/KycPolicy';
 import PaymentPolicy from './components/payment-policy/PaymentPolicy';
 import ResponsibilityDisclosure from './components/responsibility-disclosure/ResponsibilityDisclosure';
+import DemoPage from './pages/demo/DemoPage';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path='/kyc-policy' element={<KycPolicy/>}/>
         <Route path='/payment-policy' element={<PaymentPolicy/>}/>
         <Route path='/responsibility-policy' element={<ResponsibilityDisclosure/>}/>
+        <Route path='/demo-page' element={<DemoPage/>}/>
       </Routes>
       </BrowserRouter>
     </div>

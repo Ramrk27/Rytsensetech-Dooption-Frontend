@@ -459,13 +459,13 @@ const MobileHeader = ({ mobOpen }) => {
                 <div class="mb-block">
                   <div class="mb-block__in mb-block__in_transparent">
                     <a
-                      href="https://m.pocketoption.com/en/register/"
+                      onClick={()=>{navigate('/signup')}}
                       class="btn btn_blue btn_small-side-padding"
                     >
                       Registration{" "}
                     </a>
                     <a
-                      href="https://m.pocketoption.com/en/login/"
+                      onClick={()=>{navigate("login")}}
                       class="btn btn_white btn_small-side-padding"
                     >
                       Log In{" "}

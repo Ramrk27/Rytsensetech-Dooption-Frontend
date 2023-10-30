@@ -1,6 +1,8 @@
 import React from "react";
 import "./footer.css";
+import { useNavigate } from "react-router-dom";
 const Footer = () => {
+  const navigate = useNavigate()
   return (
     <div>
       <footer class="section footer ">
@@ -72,7 +74,7 @@ const Footer = () => {
               <li class="footer-nav__item">
                 <a
                   class="footer-nav__link"
-                  href="https://pocketoption.com/en/contacts/"
+                 onClick={()=>{navigate('/contacts')}}
                 >
                   Contacts
                 </a>
@@ -81,7 +83,7 @@ const Footer = () => {
                 <a
                   class="footer-nav__link"
                   target="_blank"
-                  href="https://pocketoption.com/pdf/offer_en.pdf"
+                  onClick={()=>{navigate('/')}}
                 >
                   Terms and Conditions
                 </a>
@@ -89,44 +91,41 @@ const Footer = () => {
               <li class="footer-nav__item">
                 <a
                   class="footer-nav__link"
-                  href="https://pocketoption.com/en/aml-policy/"
+                  onClick={()=>{navigate('/kyc-policy')}}
                 >
                   AML and KYC Policy
                 </a>
               </li>
-              <li class="footer-nav__item">
+              {/* <li class="footer-nav__item">
                 <a
                   class="footer-nav__link"
-                  href="https://pocketoption.com/pdf/po_trade/po_privacy_en.pdf"
+                  onClick={()=>{navigate('/kyc-policy')}}
                   target="_blank"
                 >
                   Privacy Policy
                 </a>
-              </li>
+              </li> */}
               <li class="footer-nav__item">
                 <a
                   class="footer-nav__link"
-                  href="https://pocketoption.com/en/payment-policy/"
-                >
+                  onClick={()=>{navigate('/payment-policy')}}                >
                   Payment Policy
                 </a>
               </li>
               <li class="footer-nav__item">
                 <a
                   class="footer-nav__link"
-                  href="https://pocketoption.com/en/about-us/regulatory-environment/"
-                >
+                  onClick={()=>{navigate('/regulatory-environment')}}                >
                   Regulatory Environment
                 </a>
               </li>
-              <li class="footer-nav__item">
+              {/* <li class="footer-nav__item">
                 <a
                   class="footer-nav__link"
-                  href="https://pocketoption.com/en/affiliate-program/"
-                >
+                  onClick={()=>{navigate('/kyc-policy')}}                >
                   Affiliate Program
                 </a>
-              </li>
+              </li> */}
             </ul>
             <div class="socket">
               <a href="" class="socket__logo logo">

@@ -13,3 +13,30 @@
 background-color: rgb(39, 28, 162);
 color: black;
 }
+
+.top-section__container_bg{
+    background-image: url('/public/images/bg/pxfuel.jpg');
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+  }
+
+
+  .top-section__content  .btn_blue-gradient{
+    color: aliceblue;
+  }
+  .item__in  .btn_blue-gradient{
+    color: aliceblue;
+  }
+  .item__in  .btn_blue-gradient:hover{
+    color: aliceblue;
+  }
+
+  .accordion-header {
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #000; /* Adjust the border style as needed */
+    border-radius: 5px; /* Add rounded corners if desired */
+    padding: 10px; /* Add padding for better visual spacing */
+    margin-top: 5px;
+    background-color: rgb(12, 76, 125);
+  }

@@ -4,23 +4,34 @@ import Sidebar from "../home-components/side-bar/Sidebar";
 import "./quickstart.css";
 import { useNavigate } from "react-router-dom";
 import Footer from "../home-components/footer/Footer";
+
+import Accordion from "react-bootstrap/Accordion";
 const QuickStart = () => {
   const navigate = useNavigate();
+
+  function toggleContent() {
+    const visibleContent = document.querySelector(".visible-content");
+    const hiddenContent = document.querySelector(".hidden-content");
+    const button = document.querySelector(".see-more-button");
+
+    if (visibleContent.style.display === "none") {
+      visibleContent.style.display = "block";
+      hiddenContent.style.display = "none";
+      button.textContent = "See More";
+    } else {
+      visibleContent.style.display = "none";
+      hiddenContent.style.display = "block";
+      button.textContent = "See Less";
+    }
+  }
   return (
     <div>
       <Header />
 
       <div class="page page--quick-start">
         <section class="section top-section">
+          <div class="container top-section__container_bg">
           <div class="container top-section__container">
-            <div class="top-section__bg bg">
-              <img
-                src="https://pocketoption.com/themes/2017-09/img/pages/quick-start/quick-start-bg.png"
-                alt=""
-                class="bg__item bg__item_1"
-              />
-              <div class="bg__item bg__item_gradient"></div>
-            </div>
             <div class="content top-section__content">
               <div class="breadcrumbs-wrap">
                 <ul class="breadcrumbs ">
@@ -47,12 +58,15 @@ const QuickStart = () => {
                 With <span>Pocket Option</span>{" "}
               </p>
               <a
-                href="https://pocketoption.com/en/cabinet/demo-high-low/?try-demo=1"
+                onClick={() => {
+                  navigate("/");
+                }}
                 class="btn btn_blue-gradient"
               >
                 Start in one click{" "}
               </a>
             </div>
+          </div>
           </div>
         </section>
 
@@ -66,7 +80,7 @@ const QuickStart = () => {
           </div>
         </section>
 
-        <section class="section section_light steps steps_left js-step">
+        {/* <section class="section section_light steps steps_left js-step">
           <div class="container steps__container">
             <div class="content steps__content">
               <div class="steps__left">
@@ -685,20 +699,20 @@ const QuickStart = () => {
 
                 <div class="steps__text">
                   <p>
-                    Trading on Dooption is easy as 123. Choose a trading
-                    asset, setup preferred chart layout and enable indicators
-                    for better market analysis. Set the trade amount, purchase
-                    time and place either a price decrease or increase order.{" "}
+                    Trading on Dooption is easy as 123. Choose a trading asset,
+                    setup preferred chart layout and enable indicators for
+                    better market analysis. Set the trade amount, purchase time
+                    and place either a price decrease or increase order.{" "}
                   </p>
                 </div>
                 <div class="steps__text steps__text_hidden">
                   <p>
-                    Trading on Dooption is easy. You will need just a few
-                    things to easily navigate the trading interface. Start by
-                    choose the trading type (quick, digital or forex MT5), then
-                    select the preferred trading asset (currency, stocks,
-                    commodities, etc.) and set the chart type (area, line,
-                    candles, bars, heiken ashi).
+                    Trading on Dooption is easy. You will need just a few things
+                    to easily navigate the trading interface. Start by choose
+                    the trading type (quick, digital or forex MT5), then select
+                    the preferred trading asset (currency, stocks, commodities,
+                    etc.) and set the chart type (area, line, candles, bars,
+                    heiken ashi).
                   </p>
                   <p>
                     Thereafter, you will find yourself on the current market
@@ -1230,6 +1244,108 @@ const QuickStart = () => {
               </div>
             </div>
           </div>
+        </section> */}
+        <section class="section section_light steps steps_left js-step">
+          <div class="container steps__container">
+            <Accordion defaultActiveKey="0">
+              <Accordion.Item eventKey="0">
+                <Accordion.Header>REGISTRATION</Accordion.Header>
+                <Accordion.Body>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="1">
+                <Accordion.Header>VERIFICATION</Accordion.Header>
+                <Accordion.Body>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="2">
+                <Accordion.Header>Deposit</Accordion.Header>
+                <Accordion.Body>
+                  Once your account is fully verified all the offered deposit
+                  options are available to you. Choose the one that is
+                  comfortable for you and proceed with the displayed
+                  instructions to complete your payment. Depending on the chosen
+                  method, it may take some time for the transfer to reflect on
+                  your Pocket Option trading account. Please note that in
+                  accordance with the as well as AML policies, you are able to
+                  withdraw funds via the methods that you previously used for
+                  depositing on your trading account.
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="3">
+                <Accordion.Header>Trading</Accordion.Header>
+                <Accordion.Body>
+                  Trading on Dooption is easy as 123. Choose a trading asset,
+                  setup preferred chart layout and enable indicators for better
+                  market analysis. Set the trade amount, purchase time and place
+                  either a price decrease or increase order. Trading on Dooption
+                  is easy. You will need just a few things to easily navigate
+                  the trading interface. Start by choose the trading type
+                  (quick, digital or forex MT5), then select the preferred
+                  trading asset (currency, stocks, commodities, etc.) and set
+                  the chart type (area, line, candles, bars, heiken ashi).
+                  Thereafter, you will find yourself on the current market
+                  situation of the chosen asset. Additionally, add the required
+                  indicators to the chart, enable signals and drawings to aid
+                  technical analysis of the market. Make your forecast and place
+                  the order by using the trading panel. You always can track and
+                  monitor your trading session in the Trades menu.
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="4">
+                <Accordion.Header>Profit</Accordion.Header>
+                <Accordion.Body>
+                  Each correct forecast result in a profitable trade order. The
+                  order amount plus the generated profit are automatically added
+                  to your account balance. Manage your income properly, invest
+                  further or withdraw profit if necessary. ass="steps__text
+                  steps__text_hidden" Each correct forecast result in profit —
+                  the originally invested trade order amount plus the generated
+                  profit (in accordance with the displayed asset payout %) are
+                  automatically added to your account balance. Manage your
+                  income properly, invest further or withdraw profit if
+                  necessary. A PRO-trader always follows the money management
+                  rules as well as always analyzes and finds the best strategies
+                  to fit the current market situation. Read more about trading
+                  strategies{" "}
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="5">
+                <Accordion.Header>Withdrawal</Accordion.Header>
+                <Accordion.Body>
+                  You can withdraw your trading account balance at any time
+                  without any restrictions on the amount. Place a withdrawal
+                  request via one of the methods previously used for depositing
+                  and wait for it to be processed and sent. If you do not have
+                  active deposit bonuses, you can withdraw your trading account
+                  balance at any time without any restrictions on the amount. In
+                  case you do have active deposit bonus, the bonus amount will
+                  be withheld from your balance if it is not executed it full.
+                  View the bonus information and execution progress in the{" "}
+                  section. Place a withdrawal request via of the methods
+                  previously used for depositing and wait for it to be processed
+                  and sent. Depending on the chosen method, it may take some
+                  time for the transfer to reflect on your account.
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+          </div>
         </section>
 
         <section class="section info">
@@ -1304,29 +1420,32 @@ const QuickStart = () => {
         </section>
 
         <section class="section risk-disclosure">
-          <div class="container">
-            <div class="content risk-disclosure__in">
-              <p class="risk-disclosure__title">Risk Warning:</p>
-              <p>
-                Trading on financial markets carries risks. Contracts for
-                Difference (‘CFDs’) are complex financial products that are
-                traded on margin. Trading CFDs carries a high level of risk
-                since leverage can work both to your advantage and disadvantage.
-                As a result, CFDs may not be suitable for all investors because
-                you may lose all your invested capital. You should not risk more
-                than you are prepared to lose. Before deciding to trade, you
-                need to ensure that you understand the risks involved and taking
-                into account your investment objectives and level of experience
-              </p>
-              <p class="risk-disclosure__link-title">
-                <a
-                  href="https://pocketoption.com/en/riskdisclosure/"
-                  target="_blank"
-                  class="risk-disclosure__link link link_light"
-                >
-                  Risk Disclosure{" "}
-                </a>
-              </p>
+          <div class="content steps__content">
+            <div class="container">
+              <div class="content risk-disclosure__in">
+                <p class="risk-disclosure__title">Risk Warning:</p>
+                <p>
+                  Trading on financial markets carries risks. Contracts for
+                  Difference (‘CFDs’) are complex financial products that are
+                  traded on margin. Trading CFDs carries a high level of risk
+                  since leverage can work both to your advantage and
+                  disadvantage. As a result, CFDs may not be suitable for all
+                  investors because you may lose all your invested capital. You
+                  should not risk more than you are prepared to lose. Before
+                  deciding to trade, you need to ensure that you understand the
+                  risks involved and taking into account your investment
+                  objectives and level of experience
+                </p>
+                <p class="risk-disclosure__link-title">
+                  <a
+                    href="https://pocketoption.com/en/riskdisclosure/"
+                    target="_blank"
+                    class="risk-disclosure__link link link_light"
+                  >
+                    Risk Disclosure{" "}
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </section>

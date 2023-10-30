@@ -11140,16 +11140,19 @@ select.form-control option {
   transition: background .5s,color .5s
 }
 
+/* mine */
 .btn_blue-gradient {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(79deg,#0099fa,#002ed9);
+  background: linear-gradient(79deg,#1e1616dc,#0099fa,#000000);
   background-size: 115% auto;
-  transition: .5s
+  transition: .5s;
+ 
 }
 
 .btn_blue-gradient:hover {
   color: #fff;
+  background: linear-gradient(79deg,#0d2d42,#0d2d42,#0d2d42);
   background-position: 100%
 }
 
@@ -22475,7 +22478,7 @@ input {
   width: 18.75rem;
   box-shadow: 0 2rem 2rem rgba(7,59,107,.2);
   color: #96aec1;
-  background: linear-gradient(180deg,#495057,#343a40, 50%,#000)
+  background: linear-gradient(180deg,#000,#000, 80%,#495057)
 }
 
 .sidebar__container {
@@ -22509,7 +22512,7 @@ input {
 .sidebar .tabs__btn.active,.sidebar .tabs__btn:hover {
   border-top: 2px solid #0099fa;
   color: #0099fa;
-  background: linear-gradient(180deg,#000,#000, 50%,#343a40)
+  background: linear-gradient(180deg,#000,#000, 50%,#000)
 
 }
 
@@ -23008,7 +23011,8 @@ input {
 }
 
 .conditions .monitor img,.conditions .monitor picture,.conditions .monitor source {
-  width: 100%
+  width: 100%;
+  margin-bottom: 200px;
 }
 
 .conditions .monitor.rotate {
@@ -23087,7 +23091,7 @@ input {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin: 0 -.625rem
+  margin: 0 -.625rem;
 }
 
 .why-we__in .why-list__item {
@@ -23096,7 +23100,7 @@ input {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 4.2rem;
-  padding: 0 .625rem;
+  padding: 0 1.625rem;
   max-width: 25%;
   visibility: hidden
 }
@@ -23143,7 +23147,7 @@ input {
   line-height: 1.7rem;
   letter-spacing: .8px;
   text-transform: uppercase;
-  color: #212121
+  color: #1c1b35
 }
 
 @media screen and (max-width: 1100px) {
@@ -23162,7 +23166,7 @@ input {
 
 .why-we__in .why-list__sub-title {
   max-width: 17rem;
-  color: #515151
+  color:#ffffff
 }
 
 .why-we__in .why-list__sub-title span {
@@ -23911,10 +23915,11 @@ input {
   will-change: transform,opacity,visibility
 }
 
+/* mine */
 .footer {
   line-height: 1.25rem;
   color: #96aec1;
-  background-color: #063764
+  background-color: #00132d
 }
 
 .footer .container {
@@ -24179,7 +24184,7 @@ input {
 }
 
 .mt100pm {
-  background: #0f487c
+  background: #6c757d
 }
 
 .mt100pm .container {
@@ -24428,11 +24433,10 @@ input {
 .your-earnings .logo__letter-1 {
   fill: #fff!important
 }
-
+/* mine */
 .risk-disclosure {
   color: #96aec1;
-  background: #063764
-}
+  background-color: #00132d}
 
 .risk-disclosure .container {
   padding: 5rem 1.875rem 1rem
@@ -24676,7 +24680,7 @@ input {
   bottom: 0;
   z-index: 1;
   display: block;
-  background: linear-gradient(90deg,#021d46,rgba(2,29,70,0) 50%,rgba(2,29,70,0))
+  background: linear-gradient(90deg,#24292f87,rgb(43 67 103 / 0%) 50%,rgba(2,29,70,0))
 }
 
 .main-slider__container {
@@ -24704,10 +24708,10 @@ input {
   position: absolute;
   top: 50%
 }
-
+/* mine */
 .main-slider .bg__item_note {
-  left: 36.5%;
-  margin-top: -44rem;
+  left: 46.5%;
+  margin-top: -15rem;
   max-width: 96.063rem
 }
 
@@ -24750,7 +24754,9 @@ input {
   background: linear-gradient(90deg,#021d46,transparent)
 }
 
+/* mine */
 .main-slider__in {
+  background: linear-gradient(180deg,#0b213800,#343a4000, 50%,#0000000f);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -24798,7 +24804,7 @@ input {
   font-family: Montserrat;
   font-weight: 600;
   font-size: 3.125rem;
-  line-height: 3.85rem;
+  line-height: 3.45rem;
   letter-spacing: 2.5px;
   text-transform: uppercase
 }
@@ -24887,11 +24893,11 @@ input {
 [lang=ar] .main-slider__in,[lang=fa] .main-slider__in {
   margin: 0 auto
 }
-
+/* mine */
 .offers {
   margin-top: -1.7rem;
   padding-bottom: 2.5rem;
-  background-color: #0f487c
+  background: linear-gradient(180deg,#fff,#488dc5 50%,#fff);
 }
 
 .offers .container {
@@ -24922,7 +24928,7 @@ input {
   display: block;
   width: .625rem;
   height: 100%;
-  background-color: #0f487c
+  background: transparent;
 }
 
 .offers__in:before {
@@ -24948,7 +24954,9 @@ input {
 }
 
 .offers__item:hover .offers__btn {
-  background: #0099fa
+  /* background: #0099fa */
+  background: linear-gradient(79deg,#0dcaf0,#0dcaf0,#0dcaf0);
+  color: #000;
 }
 
 .offers__item:hover .offers__img-wrap:before {
@@ -24963,6 +24971,7 @@ input {
   opacity: 1
 }
 
+/* mine */
 .offers__col {
   position: relative;
   display: flex;
@@ -24972,12 +24981,12 @@ input {
   padding: 0 2rem 6rem;
   height: 100%;
   text-align: center;
-  background-color: #04294b
+  background-color: #5e6f7f63
 }
 
-@media screen and (max-width: 1000px) {
-  .offers__col {
-      padding:0 1rem 6rem
+@media screen and (max-width: 500px) {
+ .offers__in .offers__list .offers__item .offers__col {
+      background-color: #000;
   }
 }
 
@@ -24985,7 +24994,8 @@ input {
   position: relative;
   top: -3rem;
   width: 100%;
-  height: 10.5rem
+  height: 10.5rem;
+ 
 }
 
 .offers__img-wrap:before {
@@ -24998,7 +25008,8 @@ input {
   border-radius: 50%;
   width: 18rem;
   height: 18rem;
-  background-image: radial-gradient(#0a89ff 0,#04294b 70%,#04294b 100%);
+  /* background-image: radial-gradient(#0a89ff 0,#04294b 70%,#04294b 100%); */
+  background-color: transparent;
   opacity: .4;
   transform: translateX(-50%);
   transition: .5s
@@ -25019,7 +25030,7 @@ input {
   display: block;
   width: 100%;
   height: 3rem;
-  background: #0f487c
+  background: transparent
 }
 
 .offers__img {
@@ -25057,13 +25068,18 @@ input {
   }
 }
 
+/* mine */
 .offers__btn {
+  
   position: absolute;
   left: 50%;
   bottom: 1.8rem;
   z-index: 4;
-  transform: translateX(-50%)
+  transform: translateX(-50%);  
+  background: linear-gradient(79deg,#95b5d1,#c4c4c4,#95b5d1);
+
 }
+
 
 .offers__corner {
   position: absolute;

@@ -7,3 +7,16 @@
 .documents__left{
     color: black;
 }
+
+.top-section__container_about_bg{
+    background-image: url('/public/images/bg/about.jpg');
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+  }
+
+  .why__text{
+    color: rgb(0, 0, 0);
+  }
+  .why__info{
+    color: black;
+  }

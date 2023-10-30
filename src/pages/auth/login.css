@@ -4,7 +4,7 @@
   -webkit-box-align: center;
   -webkit-box-pack: center;
   align-items: center;
-  background-color: #b0afafae;
+  background-color: #a9e6d4;
   border-radius: 10px;
   display: -webkit-box;
   display: flex;
@@ -20,7 +20,7 @@
 
 .social-btn {
   text-decoration: none;
-  background-color: #96aec1;
+  background-color: #69998b;
   border-radius: 5px;
   color: black;
   transition: background-color 0.3s;
