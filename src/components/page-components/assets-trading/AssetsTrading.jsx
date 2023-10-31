@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../home-components/header/Header";
-import Sidebar from "../home-components/side-bar/Sidebar";
+import Header from "../../home-components/header/Header";
+import Sidebar from "../../home-components/side-bar/Sidebar";
 import { useNavigate } from "react-router-dom";
-import Footer from "../home-components/footer/Footer";
+import Footer from "../../home-components/footer/Footer";
 import "./assets-trading.css"
 
 const AssetsTrading = () => {

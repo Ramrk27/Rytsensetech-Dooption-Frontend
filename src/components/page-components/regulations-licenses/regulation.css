@@ -1,0 +1,14 @@
+/* .section .re__section{
+    background-color: rgb(6, 6, 64);
+} */
+.page__in .re__section .re__container{
+    background: linear-gradient(180deg,#8e80d7,#98e0fe, 80%,#495057)
+ 
+}
+/* .section  .container__no-padding {
+    background: linear-gradient(180deg,#8e80d7,#98e0fe, 80%,#495057)
+
+} */
+.breadcrumbs__label{
+    color: #98e0fe;
+}

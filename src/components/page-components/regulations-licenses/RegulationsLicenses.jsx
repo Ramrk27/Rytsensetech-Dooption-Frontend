@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Header from "../home-components/header/Header";
-import Footer from "../home-components/footer/Footer";
-import Sidebar from "../home-components/side-bar/Sidebar";
+import Header from "../../home-components/header/Header";
+import Footer from "../../home-components/footer/Footer";
+import Sidebar from "../../home-components/side-bar/Sidebar";
 import "./regulation.css"
 const RegulationsLicenses = () => {
   const navigate = useNavigate();

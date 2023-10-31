@@ -1,7 +1,7 @@
 import React from "react";
 import "./mobile-header.css";
 import { useNavigate } from "react-router-dom";
-import QuickStart from "../../quick-start/QuickStart";
+import QuickStart from "../../page-components/quick-start/QuickStart";
 const MobileHeader = ({ mobOpen }) => {
   const navigate = useNavigate();
   return (

@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../../components/home-components/header/Header";
-import Sidebar from "../home-components/side-bar/Sidebar";
+import Header from "../../../components/home-components/header/Header";
+import Sidebar from "../../home-components/side-bar/Sidebar";
 import "./quickstart.css";
 import { useNavigate } from "react-router-dom";
-import Footer from "../home-components/footer/Footer";
+import Footer from "../../home-components/footer/Footer";
 
 import Accordion from "react-bootstrap/Accordion";
 const QuickStart = () => {
@@ -55,7 +55,7 @@ const QuickStart = () => {
                 How to trade <span>on financial markets</span>{" "}
               </h1>
               <p class="top-section__desc">
-                With <span>Pocket Option</span>{" "}
+                With <span>Dooption</span>{" "}
               </p>
               <a
                 onClick={() => {
@@ -1282,7 +1282,7 @@ const QuickStart = () => {
                   comfortable for you and proceed with the displayed
                   instructions to complete your payment. Depending on the chosen
                   method, it may take some time for the transfer to reflect on
-                  your Pocket Option trading account. Please note that in
+                  your Dooption  trading account. Please note that in
                   accordance with the as well as AML policies, you are able to
                   withdraw funds via the methods that you previously used for
                   depositing on your trading account.

@@ -23,9 +23,9 @@ const Header = () => {
               onClick={()=>{navigate('/')}}
                 class="header__logo logo "
               >
-                <h3 width="210" height="30">
-                  Dooption{" "}
-                </h3>
+             
+                  <img src="/images/logo/logo-no-background.png" width="250" height="40"/>
+                
               </a>
               <div class="header__info info">
                 <div class="info__icon-wrap">

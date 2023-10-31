@@ -10,11 +10,13 @@
   }
   .card-title {
     font-size: 18px;
+    font-size: medium;
+    font-weight: bold;
   }
   
   @media (max-width: 768px) {
     .card-title {
-      font-size: 10px;
+      font-size: small;
       color: aqua;
     }
   }

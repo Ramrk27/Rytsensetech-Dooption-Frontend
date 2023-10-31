@@ -1,8 +1,8 @@
 import React from "react";
 import "./contact.css";
-import Header from "../home-components/header/Header";
-import Footer from "../home-components/footer/Footer";
-import Sidebar from "../home-components/side-bar/Sidebar";
+import Header from "../../home-components/header/Header";
+import Footer from "../../home-components/footer/Footer";
+import Sidebar from "../../home-components/side-bar/Sidebar";
 import { useNavigate } from "react-router-dom";
 
 const Contacts = () => {
@@ -15,7 +15,7 @@ const Contacts = () => {
           <div class="container top-section__container">
             <div class="top-section__bg bg">
               <img
-                src="https://pocketoption.com/themes/2017-09/img/pages/contacts/contacts-bg.png"
+                src="/images/bg/contacts-bg.jpg "
                 alt=""
                 class="bg__item bg__item_1"
               />

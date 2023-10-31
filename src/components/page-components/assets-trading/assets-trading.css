@@ -1,0 +1,9 @@
+.assets-section{
+    background: linear-gradient(180deg,#8e80d7,#98e0fe, 80%,#495057)
+}
+.assets-section .container__no-paddin  .tab-content__current{
+    padding-top: 0px;
+}
+.content .breadcrumbs{
+    color: #150d3d;
+}
