@@ -106,9 +106,14 @@ const About = () => {
               <div class="why__right">
                 <div class="why__info info">
                   <img
-                    src="https://pocketoption.com/themes/2017-09/img/pages/about/why-icon.png"
+                    src="/images/contents/about-active.png"
                     alt=""
                     class="info__img"
+                    style={{
+                      width: "90px",
+                      height: "100px;",
+                      "margin-top": "150px",
+                    }}
                   />
                   <div class="info__text">
                     <p>
@@ -174,7 +179,7 @@ const About = () => {
               <div class="content documents__content">
                 <div class="documents__img-wrap">
                   <img
-                    src="https://pocketoption.com/themes/2017-09/img/pages/about/mail.png"
+                    src="/images/contents/about-documentation.png"
                     alt="Mail"
                     class="documents__img"
                   />
@@ -253,9 +258,10 @@ const About = () => {
                   <div class="core-values__item item">
                     <div class="item__in">
                       <img
-                        src="https://pocketoption.com/themes/2017-09/img/pages/about/icons/1.svg"
+                        src="/images/contents/data-analysis.png"
                         alt=""
                         class="item__icon"
+                        style={{ width: "100px", height: "100px" }}
                       />
                       <p class="item__title">Driving innovations</p>
                       <div class="item__text">
@@ -268,9 +274,10 @@ const About = () => {
                   <div class="core-values__item item">
                     <div class="item__in">
                       <img
-                        src="https://pocketoption.com/themes/2017-09/img/pages/about/icons/2.svg"
+                        src="/images/contents/customer-loyalty.png"
                         alt=""
                         class="item__icon"
+                        style={{ width: "100px", height: "100px" }}
                       />
                       <p class="item__title">Customer loyalty</p>
                       <div class="item__text">
@@ -284,9 +291,10 @@ const About = () => {
                   <div class="core-values__item item">
                     <div class="item__in">
                       <img
-                        src="https://pocketoption.com/themes/2017-09/img/pages/about/icons/3.svg"
+                        src="/images/contents/about-social.png"
                         alt=""
                         class="item__icon"
+                        style={{ width: "100px", height: "100px" }}
                       />
                       <p class="item__title">Truly social</p>
                       <div class="item__text">
@@ -299,9 +307,10 @@ const About = () => {
                   <div class="core-values__item item">
                     <div class="item__in">
                       <img
-                        src="https://pocketoption.com/themes/2017-09/img/pages/about/icons/4.svg"
+                        src="/images/contents/sustainability.png"
                         alt=""
                         class="item__icon"
+                        style={{ width: "100px", height: "100px" }}
                       />
                       <p class="item__title">Sustainability</p>
                       <div class="item__text">
@@ -315,9 +324,10 @@ const About = () => {
                   <div class="core-values__item item">
                     <div class="item__in">
                       <img
-                        src="https://pocketoption.com/themes/2017-09/img/pages/about/icons/5.svg"
+                        src="/images/contents/flex-trader.png"
                         alt=""
                         class="item__icon"
+                        style={{ width: "100px", height: "100px" }}
                       />
                       <p class="item__title">Integrity</p>
                       <div class="item__text">
@@ -331,9 +341,10 @@ const About = () => {
                   <div class="core-values__item item">
                     <div class="item__in">
                       <img
-                        src="https://pocketoption.com/themes/2017-09/img/pages/about/icons/6.svg"
+                        src="/images/contents/about-success.png"
                         alt=""
                         class="item__icon"
+                        style={{ width: "100px", height: "100px" }}
                       />
                       <p class="item__title">Shared success</p>
                       <div class="item__text">

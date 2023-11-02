@@ -15,32 +15,32 @@ const Content = () => {
   };
   const items = [
     {
-      src: "/images/cards/edit-three.png",
+      src: "/images/cards/card-2.png",
       alt: "First slide",
       title: "ACHIEVEMENTS",
     },
     {
-      src: "/images/cards/edit-two.png",
+      src: "/images/cards/card-3.png",
       alt: "Second slide",
       title: "PAYMENT METHODS",
     },
     {
-      src: "/images/cards/six-edit.png",
+      src: "/images/cards/card-4.png",
       alt: "Third slide",
       title: "GREAT COMMUNITY",
     },
     {
-      src: "/images/cards/four-edit.png",
+      src: "/images/cards/card-6.png",
       alt: "First slide",
       title: "WHY PEOPLE CHOOSE US",
     },
     {
-      src: "/images/cards/five-edit.png",
+      src: "/images/cards/card-1.png",
       alt: "Second slide",
       title: "TECHNICAL ANALYSIS TOOL",
     },
     {
-      src: "/images/cards/edit-one.png",
+      src: "/images/cards/card-5.png",
       alt: "Third slide",
       title: "TRADING ASSETS",
     },
@@ -173,7 +173,7 @@ const Content = () => {
                   href="https://pocketoption.com/en/cabinet/high-low/"
                 >
                   <img
-                    src="/images/contents/1.svg"
+                    src="/images/contents/flex-trader.png"
                     alt="Icon 1"
                     class="lazy"
                     loading="lazy"
@@ -192,7 +192,7 @@ const Content = () => {
                   href="https://pocketoption.com/en/cabinet/platform-guide/"
                 >
                   <img
-                    src="/images/contents/1.svg"
+                    src="/images/contents/education.png"
                     alt="Icon 2"
                     class="lazy"
                     loading="lazy"
@@ -210,7 +210,7 @@ const Content = () => {
                   href="https://pocketoption.com/en/cabinet/demo-high-low/?try-demo=1"
                 >
                   <img
-                    src="/images/contents/3.svg"
+                    src="/images/contents/trade-instr.png"
                     alt="Icon 3"
                     class="lazy"
                     loading="lazy"
@@ -228,7 +228,7 @@ const Content = () => {
                   href="https://pocketoption.com/en/cabinet/demo-high-low/?try-demo=1"
                 >
                   <img
-                    src="/images/contents/4.svg"
+                    src="/images/contents/demo.png"
                     alt="Icon 4"
                     class="lazy"
                     loading="lazy"
@@ -246,7 +246,7 @@ const Content = () => {
                   href="https://pocketoption.com/en/payment-methods/"
                 >
                   <img
-                    src="/images/contents/5.svg"
+                    src="/images/contents/deposit.png"
                     alt="Icon 5"
                     class="lazy"
                     loading="lazy"
@@ -264,7 +264,7 @@ const Content = () => {
                   href="https://pocketoption.com/en/cabinet/high-low/"
                 >
                   <img
-                    src="/images/contents/6.svg"
+                    src="/images/contents/customer-loyalty.png"
                     alt="Icon 6"
                     class="lazy"
                     loading="lazy"
@@ -282,7 +282,7 @@ const Content = () => {
                   href="https://pocketoption.com/en/cabinet/profile/achievements/market/"
                 >
                   <img
-                    src="/images/contents/7.svg"
+                    src="/images/contents/trade-adv.png"
                     alt="Icon 7"
                     class="lazy"
                     loading="lazy"
@@ -300,7 +300,7 @@ const Content = () => {
                   href="https://pocketoption.com/en/cabinet/high-low/#open-chart-settings-indicators-modal"
                 >
                   <img
-                    src="/images/contents/8.svg"
+                    src="/images/contents/indicators.png"
                     alt="Icon 8"
                     class="lazy"
                     loading="lazy"

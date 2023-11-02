@@ -1355,9 +1355,10 @@ const QuickStart = () => {
                 <div class="item__in social">
                   <div class="item__icon-wrap">
                     <img
-                      src="https://pocketoption.com/themes/2017-09/img/pages/quick-start/icon-social.svg"
+                      src="/images/contents/quick-social.png"
                       alt="Social icon"
                       class="item__icon"
+                      style={{"width": "100px", "height": "100px;"}}
                     />
                   </div>
                   <h2 class="item__title">
@@ -1388,9 +1389,10 @@ const QuickStart = () => {
                 <div class="item__in chat">
                   <div class="item__icon-wrap">
                     <img
-                      src="https://pocketoption.com/themes/2017-09/img/pages/quick-start/icon-chat.svg"
+                      src="/images/contents/quick-chat.png"
                       alt="Chat icon"
                       class="item__icon"
+                      style={{"width": "100px", "height": "100px;"}}
                     />
                   </div>
                   <h2 class="item__title">Chat </h2>

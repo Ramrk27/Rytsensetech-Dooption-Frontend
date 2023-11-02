@@ -27,6 +27,18 @@ const Sidebar = () => {
                     >
                       <div class="form-group form-group_filled">
                         <input
+                          type="username"
+                          name="username"
+                          value=""
+                          class="form-control"
+                          required="1"
+                          autocomplete="off"
+                          placeholder="Username"
+                        />{" "}
+                        <label for="username">UserName</label>
+                      </div>
+                      <div class="form-group form-group_filled">
+                        <input
                           type="email"
                           name="email"
                           value=""
@@ -48,10 +60,10 @@ const Sidebar = () => {
                           autocomplete="off"
                           placeholder="Password"
                         />{" "}
-                        <label for="email">Password</label>
+                        <label for="password">Password</label>
                         <div class="password-container__icon"></div>
                       </div>
-                      <div class="form-group ">
+                      {/* <div class="form-group ">
                         <input
                           type="text"
                           name="promo_code"
@@ -62,7 +74,7 @@ const Sidebar = () => {
                           placeholder="Promo code"
                         />{" "}
                         <label for="email">Promo code</label>
-                      </div>
+                      </div> */}
                       <div class="form-group  rules ">
                         <div class="checkbox">
                           <label>
@@ -113,11 +125,18 @@ const Sidebar = () => {
                         <div class="register-social">
                           <a
                             class="social-btn social-btn--sm social-btn--icon social-btn--gp"
-                            href="https://pocketoption.com/en/login?social=Google"
+                            href="/"
                           >
                             Google
                           </a>
+                          <a
+                            class="social-btn social-btn--sm social-btn--icon social-btn--gp_face "
+                            href="/"
+                          >
+                            Facebook
+                          </a>
                         </div>
+                     
                       </div>
                     </form>
                   </div>

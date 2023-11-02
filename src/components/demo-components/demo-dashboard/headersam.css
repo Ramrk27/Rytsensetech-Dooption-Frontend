@@ -1,0 +1,74 @@
+/* .dash_header_top{
+height: 80px;
+} */
+.layout .dash_header_top .dash-header{
+    background-color: rgb(6, 6, 9);
+    height: 80px;
+}
+.header__dash_right {
+  position: absolute;
+  right: 5.625rem;
+  display: flex;
+  align-items: center;
+  margin: 0 0 auto;
+}
+
+.header__dash_progress h6{
+    font-size: x-small;
+}
+.header__dash_progress h5{
+    font-size: small;
+}
+.dash_header_top{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1001;
+    width: 100%;
+    background: black;
+    transition: .5s
+  }
+.topup-dash {
+  width: 140px;
+  height: 40px;
+  border-radius: 11px;
+  border: 2px solid rgb(97, 108, 104);
+  text-align: center;
+  line-height: 40px;
+  margin-right: 5px;
+  background-color: rgb(16, 16, 45);
+}
+.quick-trading{
+    width: 140px;
+    height: 40px;
+    border-radius: 11px;
+    border: 2px solid rgb(97, 108, 104);
+    text-align: center;
+    line-height: 40px;
+    margin-right: 5px;
+    background-color: rgb(16, 16, 45);
+
+}
+
+.quick-trading-box {
+    background-color: #f1f1f1;
+    border-radius: 11px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    margin-top: 90px;
+    margin-left: 1000px;
+  }
+
+.header__progress{
+    width: 150px;
+    height: 50px;
+    border-radius: 11px;
+    border: 2px solid rgb(97, 108, 104);
+    text-align: center;
+    line-height: 50px;
+    margin-right: 5px;
+    background-color: rgb(16, 16, 45);
+    font-size: small;
+    
+}

@@ -18,7 +18,7 @@ const Sliding = ({ items, itemsPerPage }) => {
           <Carousel.Item key={slideIndex}>
             <div className="card-container">
               {items.slice(slideIndex * itemsPerPage, (slideIndex + 1) * itemsPerPage).map((item, cardIndex) => (
-                <Card key={cardIndex} className="card" style={{ width: '250px', height: '300px' }}>
+                <Card key={cardIndex} className="card" >
                   <Card.Img variant="top" src={item.src} alt={item.alt} />
                   <Card.Body>
                     <Card.Title class="card-title">{item.title}</Card.Title>

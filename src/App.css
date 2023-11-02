@@ -22608,8 +22608,14 @@ input {
 
 .sidebar .login .register-social .social-btn--gp {
   padding-left: 1rem;
-  color: #707070;
+  color: #000;
   background-color: #fff
+}
+.sidebar .login .register-social .social-btn--gp_face {
+  padding-left: 1rem;
+  color: #000;
+  background-color: #0068b4;
+  margin-left: 3px;
 }
 
 .sidebar .login .register-social .social-btn--gp:before {

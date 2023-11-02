@@ -15,6 +15,7 @@ import QuickStart from "./components/page-components/quick-start/QuickStart";
 import RegulationsLicenses from "./components/page-components/regulations-licenses/RegulationsLicenses";
 import ResponsibilityDisclosure from "./components/page-components/responsibility-disclosure/ResponsibilityDisclosure";
 import Riview from "./components/page-components/riviews/Riview";
+import HeaderSam from "./components/demo-components/demo-dashboard/HeaderSam";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
             element={<ResponsibilityDisclosure />}
           />
           <Route path="/demo-page" element={<DemoPage />} />
+          <Route path="/head" element={<HeaderSam/>} />
         </Routes>
       </BrowserRouter>
     </div>
